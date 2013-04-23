@@ -41,6 +41,9 @@
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
 			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
 		</Item>
+		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
+		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="../Private/Generate DIO Pin Error.vi"/>
+		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
 		<Item Name="Low Level" Type="Folder">
