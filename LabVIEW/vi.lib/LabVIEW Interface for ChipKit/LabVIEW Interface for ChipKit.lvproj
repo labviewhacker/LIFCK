@@ -83,7 +83,6 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="LCD Pin Config 4-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 4-bit.ctl"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

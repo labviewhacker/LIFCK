@@ -33,9 +33,8 @@
 			<Item Name="IR Type.ctl" Type="VI" URL="../Private/Type Defs/IR Type.ctl"/>
 			<Item Name="LCD Char Row.ctl" Type="VI" URL="../Private/Type Defs/LCD Char Row.ctl"/>
 			<Item Name="LCD Character.ctl" Type="VI" URL="../Private/Type Defs/LCD Character.ctl"/>
-			<Item Name="LCD Pin Config 4 bit.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Type Defs/LCD Pin Config 4 bit.ctl"/>
+			<Item Name="LCD Pin Config 4-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 4-bit.ctl"/>
 			<Item Name="LCD Pin Config 8-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 8-bit.ctl"/>
-			<Item Name="LCD Pin Config.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Type Defs/LCD Pin Config.ctl"/>
 			<Item Name="Pin Mode.ctl" Type="VI" URL="../Private/Type Defs/Pin Mode.ctl"/>
 			<Item Name="SPI Bit Order.ctl" Type="VI" URL="../Private/Type Defs/SPI Bit Order.ctl"/>
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
@@ -155,6 +154,7 @@
 	</Item>
 	<Item Name="Examples" Type="Folder">
 		<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
+		<Item Name="ChipKit Blink.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink.vi"/>
 		<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
 		<Item Name="ChipKit Continuous Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Continuous Sampling.vi"/>
 		<Item Name="ChipKit Finite Analog Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Finite Analog Sampling.vi"/>
