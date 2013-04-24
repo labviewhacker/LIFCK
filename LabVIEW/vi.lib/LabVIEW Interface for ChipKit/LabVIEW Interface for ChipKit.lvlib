@@ -25,6 +25,8 @@
 			<Item Name="Chipkit Resource.ctl" Type="VI" URL="../Private/Type Defs/Chipkit Resource.ctl"/>
 			<Item Name="Base.ctl" Type="VI" URL="../Private/Type Defs/Base.ctl"/>
 			<Item Name="BlinkM Script.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script.ctl"/>
+			<Item Name="BlinkM Script Line.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line.ctl"/>
+			<Item Name="BlinkM Script Line Parameters.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line Parameters.ctl"/>
 			<Item Name="Board Type.ctl" Type="VI" URL="../Private/Type Defs/Board Type.ctl"/>
 			<Item Name="Command.ctl" Type="VI" URL="../Private/Type Defs/Command.ctl"/>
 			<Item Name="Connection Type.ctl" Type="VI" URL="../Private/Type Defs/Connection Type.ctl"/>
@@ -39,7 +41,9 @@
 			<Item Name="SPI Bit Order.ctl" Type="VI" URL="../Private/Type Defs/SPI Bit Order.ctl"/>
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
+			<Item Name="Stepper Control Method.ctl" Type="VI" URL="../Private/Type Defs/Stepper Control Method.ctl"/>
 			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
+			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
 		</Item>
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="../Private/Generate DIO Pin Error.vi"/>
