@@ -42,6 +42,10 @@
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
 			<Item Name="Stepper Control Method.ctl" Type="VI" URL="../Private/Type Defs/Stepper Control Method.ctl"/>
+			<Item Name="Temperature Units.ctl" Type="VI" URL="../Private/Type Defs/Temperature Units.ctl"/>
+			<Item Name="Thermistor Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thermistor Configuration.ctl"/>
+			<Item Name="Thumbstick Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Configuration.ctl"/>
+			<Item Name="Thumbstick Data.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Data.ctl"/>
 			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
 			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
 		</Item>
@@ -146,7 +150,6 @@
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Angle Mag To RGB.vi" Type="VI" URL="../Public/Utility/Angle Mag To RGB.vi"/>
-			<Item Name="Auto Detect.vi" Type="VI" URL="../Public/Utility/Auto Detect.vi"/>
 			<Item Name="Calculate Update Rates.vi" Type="VI" URL="../Public/Utility/Calculate Update Rates.vi"/>
 			<Item Name="Check For Pin Out Of Range.vi" Type="VI" URL="../Public/Utility/Check For Pin Out Of Range.vi"/>
 			<Item Name="Cycle RGB Colors.vi" Type="VI" URL="../Public/Utility/Cycle RGB Colors.vi"/>
@@ -156,26 +159,26 @@
 			<Item Name="Thumbstick Value To Angle.vi" Type="VI" URL="../Public/Utility/Thumbstick Value To Angle.vi"/>
 			<Item Name="Wait For Bytes.vi" Type="VI" URL="../Public/Utility/Wait For Bytes.vi"/>
 		</Item>
+		<Item Name="Examples" Type="Folder">
+			<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
+			<Item Name="ChipKit Blink.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink.vi"/>
+			<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
+			<Item Name="ChipKit Continuous Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Continuous Sampling.vi"/>
+			<Item Name="ChipKit Finite Analog Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Finite Analog Sampling.vi"/>
+			<Item Name="ChipKit IR Sensor.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit IR Sensor.vi"/>
+			<Item Name="ChipKit LCD Event Based.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit LCD Event Based.vi"/>
+			<Item Name="ChipKit LCD Hello World 4-bit.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit LCD Hello World 4-bit.vi"/>
+			<Item Name="ChipKit Light Show.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Light Show.vi"/>
+			<Item Name="ChipKit Photocell.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Photocell.vi"/>
+			<Item Name="ChipKit RGB LED.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit RGB LED.vi"/>
+			<Item Name="ChipKit Servo.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Servo.vi"/>
+			<Item Name="ChipKit Seven Segment Display.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Seven Segment Display.vi"/>
+			<Item Name="ChipKit Stepper Motor.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Stepper Motor.vi"/>
+			<Item Name="ChipKit Thermistor Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thermistor Read.vi"/>
+			<Item Name="ChipKit Thumbstick.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thumbstick.vi"/>
+			<Item Name="ChipKit Tone.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Tone.vi"/>
+		</Item>
 		<Item Name="Close.vi" Type="VI" URL="../Public/Close.vi"/>
 		<Item Name="Init.vi" Type="VI" URL="../Public/Init.vi"/>
-	</Item>
-	<Item Name="Examples" Type="Folder">
-		<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
-		<Item Name="ChipKit Blink.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink.vi"/>
-		<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
-		<Item Name="ChipKit Continuous Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Continuous Sampling.vi"/>
-		<Item Name="ChipKit Finite Analog Sampling.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Finite Analog Sampling.vi"/>
-		<Item Name="ChipKit IR Sensor.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit IR Sensor.vi"/>
-		<Item Name="ChipKit LCD Event Based.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit LCD Event Based.vi"/>
-		<Item Name="ChipKit LCD Hello World 4-bit.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit LCD Hello World 4-bit.vi"/>
-		<Item Name="ChipKit Light Show.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Light Show.vi"/>
-		<Item Name="ChipKit Photocell.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Photocell.vi"/>
-		<Item Name="ChipKit RGB LED.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit RGB LED.vi"/>
-		<Item Name="ChipKit Servo.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Servo.vi"/>
-		<Item Name="ChipKit Seven Segment Display.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Seven Segment Display.vi"/>
-		<Item Name="ChipKit Stepper Motor.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Stepper Motor.vi"/>
-		<Item Name="ChipKit Thermistor Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thermistor Read.vi"/>
-		<Item Name="ChipKit Thumbstick.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thumbstick.vi"/>
-		<Item Name="ChipKit Tone.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Tone.vi"/>
 	</Item>
 </Library>
