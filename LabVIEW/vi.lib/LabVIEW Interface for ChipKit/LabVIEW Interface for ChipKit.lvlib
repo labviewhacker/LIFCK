@@ -50,8 +50,9 @@
 			<Item Name="Pin Type.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Type Defs/Pin Type.ctl"/>
 		</Item>
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Board Type Enum To String.vi"/>
-		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Generate DIO Pin Error.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Generate AI Pin Error.vi"/>
+		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Generate DIO Pin Error.vi"/>
+		<Item Name="Generate Tone Pin Error.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Private/Generate Tone Pin Error.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
 		<Item Name="Low Level" Type="Folder">
