@@ -38,6 +38,9 @@
 			<Item Name="LCD Pin Config 4-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 4-bit.ctl"/>
 			<Item Name="LCD Pin Config 8-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 8-bit.ctl"/>
 			<Item Name="Pin Mode.ctl" Type="VI" URL="../Private/Type Defs/Pin Mode.ctl"/>
+			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
+			<Item Name="PWM Pins.ctl" Type="VI" URL="../Private/Type Defs/PWM Pins.ctl"/>
+			<Item Name="PWM Port Duty Cycles.ctl" Type="VI" URL="../Private/Type Defs/PWM Port Duty Cycles.ctl"/>
 			<Item Name="SPI Bit Order.ctl" Type="VI" URL="../Private/Type Defs/SPI Bit Order.ctl"/>
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
@@ -47,7 +50,6 @@
 			<Item Name="Thumbstick Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Configuration.ctl"/>
 			<Item Name="Thumbstick Data.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Data.ctl"/>
 			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
-			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
 		</Item>
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
