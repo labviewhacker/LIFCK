@@ -54,6 +54,7 @@
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
 		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="../Private/Generate DIO Pin Error.vi"/>
+		<Item Name="Generate PWM Pin Error.vi" Type="VI" URL="../Private/Generate PWM Pin Error.vi"/>
 		<Item Name="Generate Tone Pin Error.vi" Type="VI" URL="../Private/Generate Tone Pin Error.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
