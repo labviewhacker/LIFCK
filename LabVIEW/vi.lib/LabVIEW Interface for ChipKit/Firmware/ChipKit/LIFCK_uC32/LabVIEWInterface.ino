@@ -213,7 +213,7 @@ void processCommand(unsigned char command[])
        Serial.write('0');
       break;
     case 0x0F:    // Send I2C Data
-      Wire.beginTransmission(command[3]);
+      Wire.beginTransmission(command[3] | 0x80);  //Or With 0x80 To Set R/W Bit.  Chipkit doesn't do this for you (Arduino does)
       for(int i=0; i<command[2]; i++)
       {
         #if defined(ARDUINO) && ARDUINO >= 100
@@ -569,16 +569,31 @@ void analogReadPort()
   int pin3 = analogRead(3);
   int pin4 = analogRead(4);
   int pin5 = analogRead(5);
+  int pin6 = analogRead(6);
+  int pin7 = analogRead(7);
+  int pin8 = analogRead(8);
+  int pin9 = analogRead(9);
+  int pin10 = analogRead(10);
+  int pin11 = analogRead(11);
 
   //Build 8-Byte Packet From 60 Bits of Data Read
   char output0 = (pin0 & 0xFF);   
   char output1 = ( ((pin1 << 2) & 0xFC) | ( (pin0 >> 8) & 0x03) );
   char output2 = ( ((pin2 << 4) & 0xF0) | ( (pin1 >> 6) & 0x0F) );
   char output3 = ( ((pin3 << 6) & 0xC0) | ( (pin2 >> 4) & 0x3F) );    
-  char output4 = ( (pin3 >> 2) & 0xFF);    
-  char output5 = (pin4 & 0xFF);
+  char output4 = ( (pin3 >> 2) & 0xFF);  
+  
+  char output5 = (pin4 & 0xFF);   
   char output6 = ( ((pin5 << 2) & 0xFC) | ( (pin4 >> 8) & 0x03) );
-  char output7 = ( (pin5 >> 6) & 0x0F );
+  char output7 = ( ((pin6 << 4) & 0xF0) | ( (pin5 >> 6) & 0x0F) );
+  char output8 = ( ((pin7 << 6) & 0xC0) | ( (pin6 >> 4) & 0x3F) );    
+  char output9 = ( (pin7 >> 2) & 0xFF);  
+ 
+  char output10 = (pin8 & 0xFF);   
+  char output11 = ( ((pin9 << 2) & 0xFC) | ( (pin8 >> 8) & 0x03) );
+  char output12 = ( ((pin10 << 4) & 0xF0) | ( (pin9 >> 6) & 0x0F) );
+  char output13 = ( ((pin11 << 6) & 0xC0) | ( (pin10 >> 4) & 0x3F) );    
+  char output14 = ( (pin11 >> 2) & 0xFF);
 
   // Write Bytes To Serial Port
   Serial.print(output0);
@@ -589,6 +604,13 @@ void analogReadPort()
   Serial.print(output5);
   Serial.print(output6);
   Serial.print(output7);
+  Serial.print(output8);
+  Serial.print(output9);
+  Serial.print(output10);
+  Serial.print(output11);
+  Serial.print(output12);
+  Serial.print(output13);
+  Serial.print(output14);
 }
 
 // Configure digital I/O pins to use for seven segment display

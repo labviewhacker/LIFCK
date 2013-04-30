@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-04-29 11:17:33" Creator="Sammy_K" Comments="" ID="eb993c0378a5ed5451c7dfc7af12cbe2">
+<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-04-30 14:52:23" Creator="Sammy_K" Comments="" ID="8105ee456bc0be731033139bc5b32c4c">
   <Library_General_Settings>
     <Package_File_Name>national_instruments_lib_labview_interface_for_chipkit</Package_File_Name>
-    <Library_Version>1.0.0.4</Library_Version>
+    <Library_Version>1.0.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>Installers</Library_Output_Folder>
@@ -136,6 +136,12 @@ For example code, demos, documentation and help please visit www.ni.com/chipkit.
       </Exclusions>
       <Exclusions>
         <Path>.git</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>.gitignore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Installers</Path>
       </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
