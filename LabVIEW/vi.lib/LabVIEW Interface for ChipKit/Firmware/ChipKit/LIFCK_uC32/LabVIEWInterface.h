@@ -1,14 +1,13 @@
 /*********************************************************************************
  **
- **
- **  LVFA_Firmware - Provides Functions For Interfacing With The Arduino Uno
+ **  LIFCK_uC32 - Provides Basic ChipKit uC32 Firmware For Interfacing With LabVIEW.
  **
  **  Written By:    Sam Kristoff - National Instruments
- **  Written On:    November 2010
- **  Last Updated:  Dec 2011 - Kevin Fort - National Instruments
+ **  Written On:    April 2013
+ **  Last Updated:  April 2013 - Sam Kristoff - National Instruments
  **
  **  This File May Be Modified And Re-Distributed Freely. Original File Content
- **  Written By Sam Kristoff And Available At www.ni.com/arduino.
+ **  Written By Sam Kristoff And Available At www.ni.com/chipkit.
  **
  *********************************************************************************/
 
@@ -22,13 +21,13 @@
 #define FIRMWARE_MAJOR 02        
 #define FIRMWARE_MINOR 00  
 #define DEFAULTBAUDRATE 115200
-#define MODE_DEFAULT 0            // Defines Arduino Modes (Currently Not Used)
+#define MODE_DEFAULT 0            // Defines ChipKit Modes (Currently Not Used)
 #define COMMANDLENGTH 15          // Defines The Number Of Bytes In A Single LabVIEW Command (This must match the packet size specifid in LabVIEW)
 //#define STEPPER_SUPPORT 1         // Defines Whether The Stepper Library Is Included - Comment This Line To Exclude Stepper Support
 
 
 // Declare Variables
-unsigned char currentCommand[COMMANDLENGTH];    // The Current Command For The Arduino To Process
+unsigned char currentCommand[COMMANDLENGTH];    // The Current Command For The ChipKit To Process
 //Globals for continuous aquisition
 unsigned char acqMode;
 unsigned char contAcqPin;
@@ -52,7 +51,7 @@ void syncLV();
 /*********************************************************************************
 **  setMode
 **
-**  Sets the mode of the Arduino (Reserved For Future Use)
+**  Sets the mode of the ChipKit (Reserved For Future Use)
 **
 **  Input:  Int - Mode
 **  Output: None

@@ -1,15 +1,13 @@
-
-
 /*********************************************************************************
  **
- **  LVFA_Firmware - Provides Basic Arduino Sketch For Interfacing With LabVIEW.
+ **  LIFCK_uC32 - Provides Basic ChipKit uC32 Firmware For Interfacing With LabVIEW.
  **
  **  Written By:    Sam Kristoff - National Instruments
- **  Written On:    November 2010
- **  Last Updated:  Dec 2011 - Kevin Fort - National Instruments
+ **  Written On:    April 2013
+ **  Last Updated:  April 2013 - Sam Kristoff - National Instruments
  **
  **  This File May Be Modified And Re-Distributed Freely. Original File Content
- **  Written By Sam Kristoff And Available At www.ni.com/arduino.
+ **  Written By Sam Kristoff And Available At www.ni.com/chipkit.
  **
  *********************************************************************************/
 
@@ -28,7 +26,7 @@
 /*********************************************************************************
  **  setup()
  **
- **  Initialize the Arduino and setup serial communication.
+ **  Initialize the ChipKit and setup serial communication.
  **
  **  Input:  None
  **  Output: None
@@ -46,7 +44,7 @@ void setup()
 /*********************************************************************************
  **  loop()
  **
- **  The main loop.  This loop runs continuously on the Arduino.  It 
+ **  The main loop.  This loop runs continuously on the ChipKit.  It 
  **  receives and processes serial commands from LabVIEW.
  **
  **  Input:  None

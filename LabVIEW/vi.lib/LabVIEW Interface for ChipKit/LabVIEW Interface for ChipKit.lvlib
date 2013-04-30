@@ -19,6 +19,8 @@
 				<Item Name="Init Sound Card.vi" Type="VI" URL="../Private/Helper VIs/Audio Helpers/Init Sound Card.vi"/>
 				<Item Name="Randomize Colors.vi" Type="VI" URL="../Private/Helper VIs/Audio Helpers/Randomize Colors.vi"/>
 			</Item>
+			<Item Name="Unpack AI Data.vi" Type="VI" URL="../Private/Helper VIs/Unpack AI Data.vi"/>
+			<Item Name="Reset ChipKit.vi" Type="VI" URL="../Private/Helper VIs/Reset ChipKit.vi"/>
 		</Item>
 		<Item Name="Type Defs" Type="Folder">
 			<Item Name="Analog Pin.ctl" Type="VI" URL="../Private/Type Defs/Analog Pin.ctl"/>

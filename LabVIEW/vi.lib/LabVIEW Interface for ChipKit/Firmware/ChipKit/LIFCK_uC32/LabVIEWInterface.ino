@@ -1,13 +1,13 @@
 /*********************************************************************************
  **
- **  LVIFA_Firmware - Provides Functions For Interfacing With The Arduino Uno
+ **  LIFCK_uC32 - Provides Basic ChipKit uC32 Firmware For Interfacing With LabVIEW.
  **
  **  Written By:    Sam Kristoff - National Instruments
- **  Written On:    November 2010
- **  Last Updated:  Dec 2011 - Kevin Fort - National Instruments
+ **  Written On:    April 2013
+ **  Last Updated:  April 2013 - Sam Kristoff - National Instruments
  **
  **  This File May Be Modified And Re-Distributed Freely. Original File Content
- **  Written By Sam Kristoff And Available At www.ni.com/arduino.
+ **  Written By Sam Kristoff And Available At www.ni.com/chipkit.
  **
  *********************************************************************************/
 
@@ -65,7 +65,7 @@ Servo *servos;
 byte customChar[8];
 LiquidCrystal lcd(0,0,0,0,0,0,0);
 
-// Sets the mode of the Arduino (Reserved For Future Use)
+// Sets the mode of the ChipKit (Reserved For Future Use)
 void setMode(int mode)
 {
   currentMode = mode;

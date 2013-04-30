@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-04-28 15:14:41" Creator="Sammy_K" Comments="" ID="477833fe590f563ba98605fea5089cf4">
+<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-04-29 11:17:33" Creator="Sammy_K" Comments="" ID="eb993c0378a5ed5451c7dfc7af12cbe2">
   <Library_General_Settings>
     <Package_File_Name>national_instruments_lib_labview_interface_for_chipkit</Package_File_Name>
-    <Library_Version>1.0.0.3</Library_Version>
+    <Library_Version>1.0.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>Installers</Library_Output_Folder>
