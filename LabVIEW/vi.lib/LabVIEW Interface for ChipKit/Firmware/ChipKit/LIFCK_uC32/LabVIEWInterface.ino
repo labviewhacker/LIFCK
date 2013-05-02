@@ -187,10 +187,12 @@ void processCommand(unsigned char command[])
        Serial.write('0');
       break;
     case 0x0B:    // PWM Write 3 Pins
-      analogWrite(command[2], command[5]);
-      analogWrite(command[3], command[6]);
-      analogWrite(command[4], command[7]);
-       Serial.write('0');
+      analogWrite(3, command[2]);
+      analogWrite(5, command[3]);
+      analogWrite(6, command[4]);
+      analogWrite(9, command[5]);
+      analogWrite(10, command[6]);
+      Serial.write('0');
       break;
       
     /*********************************************************************************
