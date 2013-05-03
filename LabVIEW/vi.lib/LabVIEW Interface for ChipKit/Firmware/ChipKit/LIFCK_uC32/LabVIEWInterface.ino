@@ -203,7 +203,7 @@ void processCommand(unsigned char command[])
        Serial.write('0');
       break;
     case 0x0D:    // Write To Seven Segment Display
-      sevenSegment_Write(command);
+      sevenSegment_Write(command[2]);
        Serial.write('0');
       break;
       
@@ -627,11 +627,11 @@ void sevenSegment_Config(unsigned char command[])
 }
 
 //  Write values to sevenSegment display.  Must first use sevenSegment_Configure
-void sevenSegment_Write(unsigned char command[])
+void sevenSegment_Write(unsigned char sevSegStatus)
 {
   for(int i=1; i<9; i++)
   {
-    digitalWrite(sevenSegmentPins[(i-1)], command[i]);
+    digitalWrite( sevenSegmentPins[(i-1)], (sevSegStatus & (0x01 << i)) );
   }
 }
 
