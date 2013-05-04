@@ -52,6 +52,11 @@
 // Variables
 
 unsigned int retVal;
+
+// Used for Digital Read Port
+unsigned int lower = 0x0000;  
+unsigned int upper = 0x0000;
+
 int sevenSegmentPins[8];
 int currentMode;
 unsigned int freq;
@@ -133,7 +138,7 @@ void processCommand(unsigned char command[])
        Serial.write('0');
       break;
     case 0x04:    // Write Digital Port 0
-      writeDigitalPort(command);
+       writeDigitalPort(command);
        Serial.write('0');
       break;
     case 0x05:    //Tone          
@@ -154,18 +159,31 @@ void processCommand(unsigned char command[])
       retVal = digitalRead(command[2]);  
       Serial.write(retVal);    
       break;
-    case 0x07:    // Digital Read Port
-      retVal = 0x0000;
-      for(int i=0; i <=13; i++)
+    case 0x07:    // Read Digital Port
+    
+    //Read Pins 2-14
+    for(int i=2; i<=13; i++)
+    {
+      if(digitalRead(i))
       {
-        if(digitalRead(i))
-        {
-          retVal += (1<<i);
-        } 
-      }
-      Serial.write( (retVal & 0xFF));
-      Serial.write( (retVal >> 8));    
-      break;
+        lower += (1<<i);        
+      }            
+    }
+    //Read Pins 26-41
+    for(int i=26; i<=41; i++)
+    {
+      if(digitalRead(i))
+      {
+        upper += (1<<i);        
+      }            
+    }
+    
+    //Send Data To LV
+    Serial.write( (lower & 0xFF));
+    Serial.write( (lower >> 8)); 
+    Serial.write( (upper & 0xFF));
+    Serial.write( (upper >> 8)); 
+    break;
       
     /*********************************************************************************
     ** Low Level - Analog Commands
@@ -545,6 +563,30 @@ void processCommand(unsigned char command[])
 // Writes Values To Digital Port (DIO 0-13).  Pins Must Be Configured As Outputs Before Being Written To
 void writeDigitalPort(unsigned char command[])
 {
+  // Write Pins 2-7
+  for(int i=2; i<=7; i++)
+  {
+    digitalWrite(i, ( (command[2] >> i) & 0x01 ));    
+  }
+  
+  // Write Pins 8-13
+  for(int i=8; i<=13; i++)
+  {
+    digitalWrite(i, ( (command[3] >> i) & 0x01 ));   
+  }
+  
+  // Write Pins 26-33
+  for(int i=26; i<=33; i++)
+  {
+    digitalWrite(i, ( (command[4] >> i) & 0x01 ));    
+  }
+  
+  // Write Pins 34-41
+  for(int i=34; i<=41; i++)
+  {
+    digitalWrite(i, ( (command[5] >> i) & 0x01 ));    
+  }
+  /*
   digitalWrite(13, (( command[2] >> 5) & 0x01) );
   digitalWrite(12, (( command[2] >> 4) & 0x01) );
   digitalWrite(11, (( command[2] >> 3) & 0x01) );
@@ -559,6 +601,7 @@ void writeDigitalPort(unsigned char command[])
   digitalWrite(2, (( command[3] >> 2) & 0x01) );
   digitalWrite(1, (( command[3] >> 1) & 0x01) );
   digitalWrite(0, (command[3] & 0x01) ); 
+  */
 }
 
 // Reads all 6 analog input ports, builds 8 byte packet, send via RS232.

@@ -45,6 +45,7 @@
 			<Item Name="All PWM Pins.ctl" Type="VI" URL="../Private/Type Defs/All PWM Pins.ctl"/>
 			<Item Name="PWM Port Duty Cycles.ctl" Type="VI" URL="../Private/Type Defs/PWM Port Duty Cycles.ctl"/>
 			<Item Name="RGB LED Pins.ctl" Type="VI" URL="../Private/Type Defs/RGB LED Pins.ctl"/>
+			<Item Name="Seven Segment Char.ctl" Type="VI" URL="../Private/Type Defs/Seven Segment Char.ctl"/>
 			<Item Name="SPI Bit Order.ctl" Type="VI" URL="../Private/Type Defs/SPI Bit Order.ctl"/>
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
