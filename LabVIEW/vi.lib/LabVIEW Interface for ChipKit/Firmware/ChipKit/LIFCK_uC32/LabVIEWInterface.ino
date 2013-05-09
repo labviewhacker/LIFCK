@@ -54,8 +54,9 @@
 unsigned int retVal;
 
 // Used for Digital Read Port
-unsigned int lower = 0x0000;  
-unsigned int upper = 0x0000;
+#define MAX_DIO_PORT_PINS 28        //This can be at most (COMMANDLENGTH-3)*8 
+unsigned char numDioPortPins = 0;
+unsigned char dioPortPins[28];    // Stores DIO Pins To Use In User Defined Order
 
 int sevenSegmentPins[8];
 int currentMode;
@@ -134,10 +135,10 @@ void processCommand(unsigned char command[])
       Serial.write('0');
       break;
     case 0x03:    // Write Digital Pin
-      digitalWrite(command[2], command[3]);
+       digitalWrite(command[2], command[3]);
        Serial.write('0');
       break;
-    case 0x04:    // Write Digital Port 0
+    case 0x04:    // Write Digital Port
        writeDigitalPort(command);
        Serial.write('0');
       break;
@@ -159,30 +160,8 @@ void processCommand(unsigned char command[])
       retVal = digitalRead(command[2]);  
       Serial.write(retVal);    
       break;
-    case 0x07:    // Read Digital Port
-    
-    //Read Pins 2-14
-    for(int i=2; i<=13; i++)
-    {
-      if(digitalRead(i))
-      {
-        lower += (1<<i);        
-      }            
-    }
-    //Read Pins 26-41
-    for(int i=26; i<=41; i++)
-    {
-      if(digitalRead(i))
-      {
-        upper += (1<<i);        
-      }            
-    }
-    
-    //Send Data To LV
-    Serial.write( (lower & 0xFF));
-    Serial.write( (lower >> 8)); 
-    Serial.write( (upper & 0xFF));
-    Serial.write( (upper >> 8)); 
+    case 0x07:    // Read Digital Port    
+      
     break;
       
     /*********************************************************************************
@@ -538,9 +517,17 @@ void processCommand(unsigned char command[])
         }
         Serial.write( (retVal & 0xFF) );
         Serial.write( (retVal >> 8) );
-  
+#endif
+      case 0x34:   // Configure Digital Write Port 
+        numDioPortPins = command[2];  
+        for(int i=0; i<8; i++)
+        {
+          dioPortPins[command[3]+i] = command[4+i];
+          pinMode(command[4+i], OUTPUT);
+        }
+        Serial.write(numDioPortPins);
         break; 
-    #endif    
+        
     
     /*********************************************************************************
     ** Unknown Packet
@@ -563,45 +550,16 @@ void processCommand(unsigned char command[])
 // Writes Values To Digital Port (DIO 0-13).  Pins Must Be Configured As Outputs Before Being Written To
 void writeDigitalPort(unsigned char command[])
 {
-  // Write Pins 2-7
-  for(int i=2; i<=7; i++)
-  {
-    digitalWrite(i, ( (command[2] >> i) & 0x01 ));    
-  }
   
-  // Write Pins 8-13
-  for(int i=8; i<=13; i++)
-  {
-    digitalWrite(i, ( (command[3] >> i) & 0x01 ));   
-  }
-  
-  // Write Pins 26-33
-  for(int i=26; i<=33; i++)
-  {
-    digitalWrite(i, ( (command[4] >> i) & 0x01 ));    
-  }
-  
-  // Write Pins 34-41
-  for(int i=34; i<=41; i++)
-  {
-    digitalWrite(i, ( (command[5] >> i) & 0x01 ));    
-  }
-  /*
-  digitalWrite(13, (( command[2] >> 5) & 0x01) );
-  digitalWrite(12, (( command[2] >> 4) & 0x01) );
-  digitalWrite(11, (( command[2] >> 3) & 0x01) );
-  digitalWrite(10, (( command[2] >> 2) & 0x01) );
-  digitalWrite(9, (( command[2] >> 1) & 0x01) );
-  digitalWrite(8, (command[2] & 0x01) );
-  digitalWrite(7, (( command[3] >> 7) & 0x01) );
-  digitalWrite(6, (( command[3] >> 6) & 0x01) );
-  digitalWrite(5, (( command[3] >> 5) & 0x01) );
-  digitalWrite(4, (( command[3] >> 4) & 0x01) );
-  digitalWrite(3, (( command[3] >> 3) & 0x01) );
-  digitalWrite(2, (( command[3] >> 2) & 0x01) );
-  digitalWrite(1, (( command[3] >> 1) & 0x01) );
-  digitalWrite(0, (command[3] & 0x01) ); 
-  */
+  //Loop Over As Many Bytes As Necissary To Get All The DIO Data
+  for(int i=0; i<( (numDioPortPins / 8)+1); i++)
+  {       
+    //Loop Over Each Value In A Byte
+    for(int j=0; j<8; j++)
+    {            
+       digitalWrite( dioPortPins[ (((i)*8) + j) ], ((command[(i)+2] >> j) & 0x01) );    //Write Value To Pin
+    }
+  }  
 }
 
 // Reads all 6 analog input ports, builds 8 byte packet, send via RS232.

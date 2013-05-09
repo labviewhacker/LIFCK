@@ -87,6 +87,7 @@
 			<Item Name="Digital Read Pin.vi" Type="VI" URL="../Public/Low Level/Digital Read Pin.vi"/>
 			<Item Name="Digital Read Port.vi" Type="VI" URL="../Public/Low Level/Digital Read Port.vi"/>
 			<Item Name="Digital Write Pin.vi" Type="VI" URL="../Public/Low Level/Digital Write Pin.vi"/>
+			<Item Name="Digital Configure Port.vi" Type="VI" URL="../Public/Low Level/Digital Configure Port.vi"/>
 			<Item Name="Digital Write Port.vi" Type="VI" URL="../Public/Low Level/Digital Write Port.vi"/>
 			<Item Name="Finite Sample Start.vi" Type="VI" URL="../Public/Low Level/Finite Sample Start.vi"/>
 			<Item Name="Get Finite Analog Sample.vi" Type="VI" URL="../Public/Low Level/Get Finite Analog Sample.vi"/>
