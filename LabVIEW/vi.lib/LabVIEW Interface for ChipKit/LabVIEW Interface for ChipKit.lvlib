@@ -19,16 +19,14 @@
 				<Item Name="Init Sound Card.vi" Type="VI" URL="../Private/Helper VIs/Audio Helpers/Init Sound Card.vi"/>
 				<Item Name="Randomize Colors.vi" Type="VI" URL="../Private/Helper VIs/Audio Helpers/Randomize Colors.vi"/>
 			</Item>
-			<Item Name="Unpack AI Data.vi" Type="VI" URL="../Private/Helper VIs/Unpack AI Data.vi"/>
 			<Item Name="Reset ChipKit.vi" Type="VI" URL="../Private/Helper VIs/Reset ChipKit.vi"/>
+			<Item Name="Unpack AI Data.vi" Type="VI" URL="../Private/Helper VIs/Unpack AI Data.vi"/>
 		</Item>
 		<Item Name="Type Defs" Type="Folder">
 			<Item Name="Analog Pin.ctl" Type="VI" URL="../Private/Type Defs/Analog Pin.ctl"/>
 			<Item Name="Chipkit Resource.ctl" Type="VI" URL="../Private/Type Defs/Chipkit Resource.ctl"/>
 			<Item Name="Base.ctl" Type="VI" URL="../Private/Type Defs/Base.ctl"/>
 			<Item Name="BlinkM Script.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script.ctl"/>
-			<Item Name="BlinkM Script Line.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line.ctl"/>
-			<Item Name="BlinkM Script Line Parameters.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line Parameters.ctl"/>
 			<Item Name="Board Type.ctl" Type="VI" URL="../Private/Type Defs/Board Type.ctl"/>
 			<Item Name="Command.ctl" Type="VI" URL="../Private/Type Defs/Command.ctl"/>
 			<Item Name="Connection Type.ctl" Type="VI" URL="../Private/Type Defs/Connection Type.ctl"/>
@@ -40,21 +38,26 @@
 			<Item Name="LCD Pin Config 4-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 4-bit.ctl"/>
 			<Item Name="LCD Pin Config 8-bit.ctl" Type="VI" URL="../Private/Type Defs/LCD Pin Config 8-bit.ctl"/>
 			<Item Name="Pin Mode.ctl" Type="VI" URL="../Private/Type Defs/Pin Mode.ctl"/>
-			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
-			<Item Name="PWM Pin.ctl" Type="VI" URL="../Private/Type Defs/PWM Pin.ctl"/>
-			<Item Name="All PWM Pins.ctl" Type="VI" URL="../Private/Type Defs/All PWM Pins.ctl"/>
-			<Item Name="PWM Port Duty Cycles.ctl" Type="VI" URL="../Private/Type Defs/PWM Port Duty Cycles.ctl"/>
-			<Item Name="RGB LED Pins.ctl" Type="VI" URL="../Private/Type Defs/RGB LED Pins.ctl"/>
-			<Item Name="Seven Segment Char.ctl" Type="VI" URL="../Private/Type Defs/Seven Segment Char.ctl"/>
 			<Item Name="SPI Bit Order.ctl" Type="VI" URL="../Private/Type Defs/SPI Bit Order.ctl"/>
 			<Item Name="SPI Clock Divider.ctl" Type="VI" URL="../Private/Type Defs/SPI Clock Divider.ctl"/>
 			<Item Name="SPI Data Mode.ctl" Type="VI" URL="../Private/Type Defs/SPI Data Mode.ctl"/>
+			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
+			<Item Name="All PWM Pins.ctl" Type="VI" URL="../Private/Type Defs/All PWM Pins.ctl"/>
+			<Item Name="BlinkM Script Line Parameters.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line Parameters.ctl"/>
+			<Item Name="BlinkM Script Line.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script Line.ctl"/>
+			<Item Name="Pin Type.ctl" Type="VI" URL="../Private/Type Defs/Pin Type.ctl"/>
+			<Item Name="PWM Pin.ctl" Type="VI" URL="../Private/Type Defs/PWM Pin.ctl"/>
+			<Item Name="PWM Port Duty Cycles.ctl" Type="VI" URL="../Private/Type Defs/PWM Port Duty Cycles.ctl"/>
+			<Item Name="RGB LED Pins.ctl" Type="VI" URL="../Private/Type Defs/RGB LED Pins.ctl"/>
+			<Item Name="Seven Segment Char.ctl" Type="VI" URL="../Private/Type Defs/Seven Segment Char.ctl"/>
 			<Item Name="Stepper Control Method.ctl" Type="VI" URL="../Private/Type Defs/Stepper Control Method.ctl"/>
 			<Item Name="Temperature Units.ctl" Type="VI" URL="../Private/Type Defs/Temperature Units.ctl"/>
 			<Item Name="Thermistor Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thermistor Configuration.ctl"/>
 			<Item Name="Thumbstick Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Configuration.ctl"/>
 			<Item Name="Thumbstick Data.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Data.ctl"/>
-			<Item Name="Value.ctl" Type="VI" URL="../Private/Type Defs/Value.ctl"/>
+		</Item>
+		<Item Name="Globals" Type="Folder">
+			<Item Name="DI Port Num Pins.vi" Type="VI" URL="../Private/Globals/DI Port Num Pins.vi"/>
 		</Item>
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
@@ -87,7 +90,6 @@
 			<Item Name="Digital Read Pin.vi" Type="VI" URL="../Public/Low Level/Digital Read Pin.vi"/>
 			<Item Name="Digital Read Port.vi" Type="VI" URL="../Public/Low Level/Digital Read Port.vi"/>
 			<Item Name="Digital Write Pin.vi" Type="VI" URL="../Public/Low Level/Digital Write Pin.vi"/>
-			<Item Name="Digital Configure Port.vi" Type="VI" URL="../Public/Low Level/Digital Configure Port.vi"/>
 			<Item Name="Digital Write Port.vi" Type="VI" URL="../Public/Low Level/Digital Write Port.vi"/>
 			<Item Name="Finite Sample Start.vi" Type="VI" URL="../Public/Low Level/Finite Sample Start.vi"/>
 			<Item Name="Get Finite Analog Sample.vi" Type="VI" URL="../Public/Low Level/Get Finite Analog Sample.vi"/>
@@ -96,6 +98,8 @@
 			<Item Name="PWM Write Port.vi" Type="VI" URL="../Public/Low Level/PWM Write Port.vi"/>
 			<Item Name="Set Digital Pin Mode.vi" Type="VI" URL="../Public/Low Level/Set Digital Pin Mode.vi"/>
 			<Item Name="Tone.vi" Type="VI" URL="../Public/Low Level/Tone.vi"/>
+			<Item Name="Configure Digital Input Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Input Port.vi"/>
+			<Item Name="Configure Digital Output Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Output Port.vi"/>
 		</Item>
 		<Item Name="Sensors" Type="Folder">
 			<Item Name="BlinkM" Type="Folder">
@@ -169,19 +173,19 @@
 			<Item Name="Thumbstick Value To Angle.vi" Type="VI" URL="../Public/Utility/Thumbstick Value To Angle.vi"/>
 			<Item Name="Wait For Bytes.vi" Type="VI" URL="../Public/Utility/Wait For Bytes.vi"/>
 		</Item>
-		<Item Name="Examples" Type="Folder">
-			<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
-			<Item Name="ChipKit Blink (Digital Write).vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink (Digital Write).vi"/>
-			<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
-			<Item Name="ChipKit Character LCD.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Character LCD.vi"/>
-			<Item Name="ChipKit Photocell.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Photocell.vi"/>
-			<Item Name="ChipKit RGB LED.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit RGB LED.vi"/>
-			<Item Name="ChipKit Seven Segment Display.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Seven Segment Display.vi"/>
-			<Item Name="ChipKit Thermistor Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thermistor Read.vi"/>
-			<Item Name="ChipKit Thumbstick.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thumbstick.vi"/>
-			<Item Name="ChipKit Tone.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Tone.vi"/>
-		</Item>
 		<Item Name="Close.vi" Type="VI" URL="../Public/Close.vi"/>
 		<Item Name="Init.vi" Type="VI" URL="../Public/Init.vi"/>
+	</Item>
+	<Item Name="Examples" Type="Folder">
+		<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
+		<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
+		<Item Name="ChipKit Photocell.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Photocell.vi"/>
+		<Item Name="ChipKit RGB LED.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit RGB LED.vi"/>
+		<Item Name="ChipKit Seven Segment Display.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Seven Segment Display.vi"/>
+		<Item Name="ChipKit Thermistor Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thermistor Read.vi"/>
+		<Item Name="ChipKit Thumbstick.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thumbstick.vi"/>
+		<Item Name="ChipKit Tone.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Tone.vi"/>
+		<Item Name="ChipKit Blink (Digital Write).vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink (Digital Write).vi"/>
+		<Item Name="ChipKit Character LCD.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Character LCD.vi"/>
 	</Item>
 </Library>

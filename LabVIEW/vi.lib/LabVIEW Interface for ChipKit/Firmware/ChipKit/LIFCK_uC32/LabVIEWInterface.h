@@ -83,12 +83,22 @@ void processCommand(unsigned char command[]);
 /*********************************************************************************
 **  writeDigitalPort
 **
-**  Write values to DIO pins 0 - 13.  Pins must first be configured as outputs.
+**  Write values to DO pins
 **
 **  Input:  Command containing digital port data
 **  Output: None
 *********************************************************************************/
 void writeDigitalPort(unsigned char command[]);
+
+/*********************************************************************************
+**  readDigitalPort
+**
+**  Read values from DO pins. 
+**
+**  Input:  Command containing digital port data
+**  Output: None
+*********************************************************************************/
+void readDigitalPort();
 
 /*********************************************************************************
 **  analogReadPort

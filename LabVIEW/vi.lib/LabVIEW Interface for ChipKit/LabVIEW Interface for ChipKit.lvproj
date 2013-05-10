@@ -10,7 +10,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Digital Write Port Test.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Digital Write Port Test.vi"/>
+		<Item Name="Test Apps" Type="Folder">
+			<Item Name="Digital Read Port Test.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Digital Read Port Test.vi"/>
+			<Item Name="Digital Write Port Test.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Digital Write Port Test.vi"/>
+		</Item>
 		<Item Name="LabVIEW Interface for ChipKit.lvlib" Type="Library" URL="../LabVIEW Interface for ChipKit.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
