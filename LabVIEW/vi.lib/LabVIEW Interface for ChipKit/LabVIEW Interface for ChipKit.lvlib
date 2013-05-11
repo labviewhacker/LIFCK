@@ -24,6 +24,7 @@
 		</Item>
 		<Item Name="Type Defs" Type="Folder">
 			<Item Name="Analog Pin.ctl" Type="VI" URL="../Private/Type Defs/Analog Pin.ctl"/>
+			<Item Name="Chipkit Configuration.ctl" Type="VI" URL="../Private/Type Defs/Chipkit Configuration.ctl"/>
 			<Item Name="Chipkit Resource.ctl" Type="VI" URL="../Private/Type Defs/Chipkit Resource.ctl"/>
 			<Item Name="Base.ctl" Type="VI" URL="../Private/Type Defs/Base.ctl"/>
 			<Item Name="BlinkM Script.ctl" Type="VI" URL="../Private/Type Defs/BlinkM Script.ctl"/>
@@ -62,6 +63,7 @@
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
 		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="../Private/Generate DIO Pin Error.vi"/>
+		<Item Name="Generate DIO Port Error.vi" Type="VI" URL="../Private/Generate DIO Port Error.vi"/>
 		<Item Name="Generate PWM Pin Error.vi" Type="VI" URL="../Private/Generate PWM Pin Error.vi"/>
 		<Item Name="Generate Tone Pin Error.vi" Type="VI" URL="../Private/Generate Tone Pin Error.vi"/>
 	</Item>
@@ -84,6 +86,8 @@
 			</Item>
 			<Item Name="Analog Read Pin.vi" Type="VI" URL="../Public/Low Level/Analog Read Pin.vi"/>
 			<Item Name="Analog Read Port.vi" Type="VI" URL="../Public/Low Level/Analog Read Port.vi"/>
+			<Item Name="Configure Digital Input Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Input Port.vi"/>
+			<Item Name="Configure Digital Output Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Output Port.vi"/>
 			<Item Name="Continuous Acquisition Off.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Off.vi"/>
 			<Item Name="Continuous Acquisition Sample.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Sample.vi"/>
 			<Item Name="Continuous Aquisition On.vi" Type="VI" URL="../Public/Low Level/Continuous Aquisition On.vi"/>
@@ -98,8 +102,6 @@
 			<Item Name="PWM Write Port.vi" Type="VI" URL="../Public/Low Level/PWM Write Port.vi"/>
 			<Item Name="Set Digital Pin Mode.vi" Type="VI" URL="../Public/Low Level/Set Digital Pin Mode.vi"/>
 			<Item Name="Tone.vi" Type="VI" URL="../Public/Low Level/Tone.vi"/>
-			<Item Name="Configure Digital Input Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Input Port.vi"/>
-			<Item Name="Configure Digital Output Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Output Port.vi"/>
 		</Item>
 		<Item Name="Sensors" Type="Folder">
 			<Item Name="BlinkM" Type="Folder">
