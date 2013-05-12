@@ -57,9 +57,7 @@
 			<Item Name="Thumbstick Configuration.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Configuration.ctl"/>
 			<Item Name="Thumbstick Data.ctl" Type="VI" URL="../Private/Type Defs/Thumbstick Data.ctl"/>
 		</Item>
-		<Item Name="Globals" Type="Folder">
-			<Item Name="DI Port Num Pins.vi" Type="VI" URL="../Private/Globals/DI Port Num Pins.vi"/>
-		</Item>
+		<Item Name="Globals" Type="Folder"/>
 		<Item Name="Board Type Enum To String.vi" Type="VI" URL="../Private/Board Type Enum To String.vi"/>
 		<Item Name="Generate AI Pin Error.vi" Type="VI" URL="../Private/Generate AI Pin Error.vi"/>
 		<Item Name="Generate DIO Pin Error.vi" Type="VI" URL="../Private/Generate DIO Pin Error.vi"/>

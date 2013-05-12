@@ -14,6 +14,7 @@
 			<Item Name="Analog Read PortTest.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Analog Read PortTest.vi"/>
 			<Item Name="Digital Read Port Test.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Digital Read Port Test.vi"/>
 			<Item Name="Digital Write Port Test.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/Digital Write Port Test.vi"/>
+			<Item Name="LCD Custom Char.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Interface for ChipKit/Test Apps/LCD Custom Char.vi"/>
 		</Item>
 		<Item Name="LabVIEW Interface for ChipKit.lvlib" Type="Library" URL="../LabVIEW Interface for ChipKit.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
