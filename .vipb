@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-05-12 15:45:21" Creator="Sammy_K" Comments="" ID="c2c0904de2ecde978abc83909959884a">
+<VI_Package_Builder_Settings Version="0.4" Created_Date="2013-04-28 14:25:31" Modified_Date="2013-08-01 15:56:08" Creator="Sammy_K" Comments="" ID="aac28eb3e377723a459bf8f4fd53b4fa">
   <Library_General_Settings>
     <Package_File_Name>national_instruments_lib_labview_interface_for_chipkit</Package_File_Name>
-    <Library_Version>1.0.0.9</Library_Version>
+    <Library_Version>1.0.1.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>Installers</Library_Output_Folder>
@@ -34,7 +34,12 @@
       <Release_Notes>LabVIEW Interface for ChipKit
 National Instruments
 
-For example code, demos, documentation and help please visit www.ni.com/chipkit.</Release_Notes>
+For example code, demos, documentation and help please visit www.ni.com/chipkit.
+
+Release Notes:
+
+1.0.1
+Added support for the chipKIT uC32 secondary UART.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -171,6 +176,7 @@ For example code, demos, documentation and help please visit www.ni.com/chipkit.
         <Palette_Disk_Base_Path>&lt;menus&gt;\Categories</Palette_Disk_Base_Path>
         <Syncing_MNU_file/>
       </Functions_Palette_Information>
+      <Apply_Short_Names_to_VI_Titles>false</Apply_Short_Names_to_VI_Titles>
     </Palette_Sets>
     <Install_Requirements>
       <All_Windows>true</All_Windows>
@@ -182,6 +188,10 @@ For example code, demos, documentation and help please visit www.ni.com/chipkit.
       <Built_LV_Version>false</Built_LV_Version>
       <Built_LV_Version_or_greater>true</Built_LV_Version_or_greater>
     </Install_Requirements>
+    <LabVIEW>
+      <Shutdown_LabVIEW_Before_Package_Install>false</Shutdown_LabVIEW_Before_Package_Install>
+      <Start_LabVIEW_After_Package_Install>false</Start_LabVIEW_After_Package_Install>
+    </LabVIEW>
   </Advanced_Settings>
   <Library_Palette_Definition/>
 </VI_Package_Builder_Settings>
