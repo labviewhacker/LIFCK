@@ -18,8 +18,10 @@
 **  Define directives providing meaningful names for constant values.
 *********************************************************************************/
 
-#define FIRMWARE_MAJOR 02        
-#define FIRMWARE_MINOR 00  
+#define FIRMWARE_MAJOR 1        
+#define FIRMWARE_MINOR 0
+#define FIRMWARE_SUBMINOR 1
+#define FIRMWARE_BUILD 0
 #define DEFAULTBAUDRATE 115200
 #define MODE_DEFAULT 0            // Defines ChipKit Modes (Currently Not Used)
 #define COMMANDLENGTH 15          // Defines The Number Of Bytes In A Single LabVIEW Command (This must match the packet size specifid in LabVIEW)

@@ -4,7 +4,7 @@
  **
  **  Written By:    Sam Kristoff - National Instruments
  **  Written On:    April 2013
- **  Last Updated:  April 2013 - Sam Kristoff - National Instruments
+ **  Last Updated:  August 2013 - Sam Kristoff - National Instruments
  **
  **  This File May Be Modified And Re-Distributed Freely. Original File Content
  **  Written By Sam Kristoff And Available At www.ni.com/chipkit.
