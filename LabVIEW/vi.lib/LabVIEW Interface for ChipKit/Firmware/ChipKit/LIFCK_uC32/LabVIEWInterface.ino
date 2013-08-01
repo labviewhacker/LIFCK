@@ -102,8 +102,7 @@ int checkForCommand(void)
     {
       currentCommand[i] = Serial.read();       
     }     
-    //Serial.print("CMD REC");
-    delay(1);
+    //Serial.print("CMD REC");    
     processCommand(currentCommand);     
     return 1;
   }
@@ -351,8 +350,8 @@ void processCommand(unsigned char command[])
        Serial.write('0');
       break; 
      /*********************************************************************************
-         **                                      LCD
-         *********************************************************************************/  
+     **                                      LCD
+     *********************************************************************************/  
     case 0x1E:  // LCD Init
         lcd.init(command[2], command[3], command[4], command[5], command[6], command[7], command[8], command[9], command[10], command[11], command[12], command[13]);
        
@@ -474,10 +473,12 @@ void processCommand(unsigned char command[])
       case 0x2B:  // Continuous Aquisition Mode Off
         acqMode=0;      
         break;  
-     case 0x2C:  // Return Firmware Revision
-         Serial.write(byte(FIRMWARE_MAJOR));  
-         Serial.write(byte(FIRMWARE_MINOR));   
-        break;  
+      case 0x2C:  // Return Firmware Revision
+         Serial.write((unsigned char)FIRMWARE_MAJOR);
+         Serial.write((unsigned char)FIRMWARE_MINOR);
+         Serial.write((unsigned char)FIRMWARE_SUBMINOR);
+         Serial.write((unsigned char)FIRMWARE_BUILD);
+        break; 
      case 0x2D:  // Perform Finite Aquisition
          Serial.write('0');
          finiteAcquisition(command[2],(command[3])+(command[4]<<8),command[5]+(command[6]<<8));
@@ -485,7 +486,7 @@ void processCommand(unsigned char command[])
     /*********************************************************************************
     ** Stepper
     *********************************************************************************/        
-    #ifdef STEPPER_SUPPORT
+#ifdef STEPPER_SUPPORT
       case 0x30:  // Configure Stepper
         if (command[2] == 5){    // Support AFMotor Shield
           switch (command[3]){
@@ -542,7 +543,33 @@ void processCommand(unsigned char command[])
         }
         Serial.write('0');
         break; 
+    /*********************************************************************************
+    **                                       UART
+    *********************************************************************************/
+    
+    case 0x36: //UART Open
+      Serial1.begin( (command[2]<<24) + (command[3]<<16) + (command[4]<<8) + (command[5]) );
+      Serial.write('0');
+      break;
+    case 0x37: //UART Write
+      for(int i=0; i<command[2]; i++)
+      {
+       Serial1.write(command[i+3]);
+      }
+      Serial.write('0');
+      break;
+    case 0x38: //UART Bytes Available
+      Serial.write( (unsigned char)Serial1.available() );
+      break;
+    case 0x39: //UART Read
+       for(int i=0; i<command[2]; i++)
+       {
+         Serial.write( Serial1.read() );
+       }
+      break;
         
+
+
     
     /*********************************************************************************
     ** Unknown Packet
@@ -769,7 +796,7 @@ void syncLV()
 // Compute Packet Checksum
 unsigned char checksum_Compute(unsigned char command[])
 {
-  unsigned char checksum;
+  unsigned char checksum = 0;
   for (int i=0; i<(COMMANDLENGTH-1); i++)
   {
     checksum += command[i]; 
@@ -900,10 +927,3 @@ void lcd_print(unsigned char command[])
   }
   Serial.write('0');
 }
-
-
-
-
-
-
-

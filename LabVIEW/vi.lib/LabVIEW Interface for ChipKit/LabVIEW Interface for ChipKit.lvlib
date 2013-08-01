@@ -81,6 +81,12 @@
 					<Item Name="SPI Set Clock Divider.vi" Type="VI" URL="../Public/Low Level/Bus Specific/SPI/SPI Set Clock Divider.vi"/>
 					<Item Name="SPI Set Data Mode.vi" Type="VI" URL="../Public/Low Level/Bus Specific/SPI/SPI Set Data Mode.vi"/>
 				</Item>
+				<Item Name="UART" Type="Folder">
+					<Item Name="UART2 Open.vi" Type="VI" URL="../Public/Low Level/Bus Specific/UART/UART2 Open.vi"/>
+					<Item Name="UART2 Write.vi" Type="VI" URL="../Public/Low Level/Bus Specific/UART/UART2 Write.vi"/>
+					<Item Name="UART2 Bytes Available.vi" Type="VI" URL="../Public/Low Level/Bus Specific/UART/UART2 Bytes Available.vi"/>
+					<Item Name="UART2 Read.vi" Type="VI" URL="../Public/Low Level/Bus Specific/UART/UART2 Read.vi"/>
+				</Item>
 			</Item>
 			<Item Name="Analog Read Pin.vi" Type="VI" URL="../Public/Low Level/Analog Read Pin.vi"/>
 			<Item Name="Analog Read Port.vi" Type="VI" URL="../Public/Low Level/Analog Read Port.vi"/>
@@ -178,6 +184,7 @@
 	</Item>
 	<Item Name="Examples" Type="Folder">
 		<Item Name="ChipKit Analog Read Pin.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Analog Read Pin.vi"/>
+		<Item Name="ChipKit Blink (Digital Write).vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink (Digital Write).vi"/>
 		<Item Name="ChipKit BlinkM.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit BlinkM.vi"/>
 		<Item Name="ChipKit Photocell.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Photocell.vi"/>
 		<Item Name="ChipKit RGB LED.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit RGB LED.vi"/>
@@ -185,7 +192,8 @@
 		<Item Name="ChipKit Thermistor Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thermistor Read.vi"/>
 		<Item Name="ChipKit Thumbstick.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Thumbstick.vi"/>
 		<Item Name="ChipKit Tone.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Tone.vi"/>
-		<Item Name="ChipKit Blink (Digital Write).vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Blink (Digital Write).vi"/>
 		<Item Name="ChipKit Character LCD.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/ChipKit Character LCD.vi"/>
+		<Item Name="chipKIT UART2 Read.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/chipKIT UART2 Read.vi"/>
+		<Item Name="chipKIT UART2 Write.vi" Type="VI" URL="../../../examples/LabVIEW Interface for ChipKit/chipKIT UART2 Write.vi"/>
 	</Item>
 </Library>
