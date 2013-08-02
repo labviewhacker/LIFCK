@@ -88,23 +88,27 @@
 					<Item Name="UART2 Read.vi" Type="VI" URL="../Public/Low Level/Bus Specific/UART/UART2 Read.vi"/>
 				</Item>
 			</Item>
-			<Item Name="Analog Read Pin.vi" Type="VI" URL="../Public/Low Level/Analog Read Pin.vi"/>
-			<Item Name="Analog Read Port.vi" Type="VI" URL="../Public/Low Level/Analog Read Port.vi"/>
-			<Item Name="Configure Digital Input Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Input Port.vi"/>
-			<Item Name="Configure Digital Output Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Output Port.vi"/>
-			<Item Name="Continuous Acquisition Off.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Off.vi"/>
-			<Item Name="Continuous Acquisition Sample.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Sample.vi"/>
-			<Item Name="Continuous Aquisition On.vi" Type="VI" URL="../Public/Low Level/Continuous Aquisition On.vi"/>
-			<Item Name="Digital Read Pin.vi" Type="VI" URL="../Public/Low Level/Digital Read Pin.vi"/>
-			<Item Name="Digital Read Port.vi" Type="VI" URL="../Public/Low Level/Digital Read Port.vi"/>
-			<Item Name="Digital Write Pin.vi" Type="VI" URL="../Public/Low Level/Digital Write Pin.vi"/>
-			<Item Name="Digital Write Port.vi" Type="VI" URL="../Public/Low Level/Digital Write Port.vi"/>
-			<Item Name="Finite Sample Start.vi" Type="VI" URL="../Public/Low Level/Finite Sample Start.vi"/>
-			<Item Name="Get Finite Analog Sample.vi" Type="VI" URL="../Public/Low Level/Get Finite Analog Sample.vi"/>
+			<Item Name="Analog" Type="Folder">
+				<Item Name="Analog Read Pin.vi" Type="VI" URL="../Public/Low Level/Analog Read Pin.vi"/>
+				<Item Name="Analog Read Port.vi" Type="VI" URL="../Public/Low Level/Analog Read Port.vi"/>
+				<Item Name="Continuous Acquisition Off.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Off.vi"/>
+				<Item Name="Continuous Acquisition Sample.vi" Type="VI" URL="../Public/Low Level/Continuous Acquisition Sample.vi"/>
+				<Item Name="Continuous Aquisition On.vi" Type="VI" URL="../Public/Low Level/Continuous Aquisition On.vi"/>
+				<Item Name="Finite Sample Start.vi" Type="VI" URL="../Public/Low Level/Finite Sample Start.vi"/>
+				<Item Name="Get Finite Analog Sample.vi" Type="VI" URL="../Public/Low Level/Get Finite Analog Sample.vi"/>
+			</Item>
+			<Item Name="Digital" Type="Folder">
+				<Item Name="Configure Digital Input Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Input Port.vi"/>
+				<Item Name="Configure Digital Output Port.vi" Type="VI" URL="../Public/Low Level/Configure Digital Output Port.vi"/>
+				<Item Name="Digital Read Pin.vi" Type="VI" URL="../Public/Low Level/Digital Read Pin.vi"/>
+				<Item Name="Digital Read Port.vi" Type="VI" URL="../Public/Low Level/Digital Read Port.vi"/>
+				<Item Name="Digital Write Pin.vi" Type="VI" URL="../Public/Low Level/Digital Write Pin.vi"/>
+				<Item Name="Digital Write Port.vi" Type="VI" URL="../Public/Low Level/Digital Write Port.vi"/>
+				<Item Name="Set Digital Pin Mode.vi" Type="VI" URL="../Public/Low Level/Set Digital Pin Mode.vi"/>
+			</Item>
 			<Item Name="PWM Configure Port.vi" Type="VI" URL="../Public/Low Level/PWM Configure Port.vi"/>
 			<Item Name="PWM Write Pin.vi" Type="VI" URL="../Public/Low Level/PWM Write Pin.vi"/>
 			<Item Name="PWM Write Port.vi" Type="VI" URL="../Public/Low Level/PWM Write Port.vi"/>
-			<Item Name="Set Digital Pin Mode.vi" Type="VI" URL="../Public/Low Level/Set Digital Pin Mode.vi"/>
 			<Item Name="Tone.vi" Type="VI" URL="../Public/Low Level/Tone.vi"/>
 		</Item>
 		<Item Name="Sensors" Type="Folder">
